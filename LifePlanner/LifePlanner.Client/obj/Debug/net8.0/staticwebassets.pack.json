@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner.Client\\obj\\Debug\\net8.0\\compressed\\qpxnh6odyc.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner.Client\\wwwroot\\appsettings.Development.json",
+      "PackagePath": "staticwebassets\\appsettings.Development.json"
+    },
+    {
+      "Id": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner.Client\\wwwroot\\appsettings.json",
+      "PackagePath": "staticwebassets\\appsettings.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LifePlanner.Client.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.LifePlanner.Client.props",
+      "PackagePath": "build\\LifePlanner.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.LifePlanner.Client.props",
+      "PackagePath": "buildMultiTargeting\\LifePlanner.Client.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.LifePlanner.Client.props",
+      "PackagePath": "buildTransitive\\LifePlanner.Client.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

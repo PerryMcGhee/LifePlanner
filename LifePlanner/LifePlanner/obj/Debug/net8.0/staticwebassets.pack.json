@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\LifePlanner.bundle.scp.css",
+      "PackagePath": "staticwebassets\\LifePlanner.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.LifePlanner.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.LifePlanner.props",
+      "PackagePath": "build\\LifePlanner.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.LifePlanner.props",
+      "PackagePath": "buildMultiTargeting\\LifePlanner.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.LifePlanner.props",
+      "PackagePath": "buildTransitive\\LifePlanner.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

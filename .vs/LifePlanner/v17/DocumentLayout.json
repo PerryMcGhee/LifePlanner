@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|c:\\users\\perry\\documents\\devprojects\\lifeplanner\\lifeplanner\\lifeplanner\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|solutionrelative:lifeplanner\\lifeplanner\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\lifeplanner\\lifeplanner\\data\\maindbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|solutionrelative:lifeplanner\\lifeplanner\\data\\maindbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|c:\\users\\perry\\documents\\devprojects\\lifeplanner\\lifeplanner\\lifeplanner\\migrations\\20240419160653_added_users_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|solutionrelative:lifeplanner\\lifeplanner\\migrations\\20240419160653_added_users_table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|c:\\users\\perry\\documents\\devprojects\\lifeplanner\\lifeplanner\\lifeplanner\\migrations\\maindbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|solutionrelative:lifeplanner\\lifeplanner\\migrations\\maindbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|c:\\users\\perry\\documents\\devprojects\\lifeplanner\\lifeplanner\\lifeplanner\\data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|solutionrelative:lifeplanner\\lifeplanner\\data\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|c:\\users\\perry\\documents\\devprojects\\lifeplanner\\lifeplanner\\lifeplanner\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|solutionrelative:lifeplanner\\lifeplanner\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\lifeplanner\\lifeplanner\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|solutionrelative:lifeplanner\\lifeplanner\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainDBContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner\\Migrations\\MainDBContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "LifePlanner\\LifePlanner\\Migrations\\MainDBContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner\\Migrations\\MainDBContextModelSnapshot.cs",
+              "RelativeToolTip": "LifePlanner\\LifePlanner\\Migrations\\MainDBContextModelSnapshot.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T16:09:09.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20240419160653_Added_users_table.cs",
+              "DocumentMoniker": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner\\Migrations\\20240419160653_Added_users_table.cs",
+              "RelativeDocumentMoniker": "LifePlanner\\LifePlanner\\Migrations\\20240419160653_Added_users_table.cs",
+              "ToolTip": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner\\Migrations\\20240419160653_Added_users_table.cs",
+              "RelativeToolTip": "LifePlanner\\LifePlanner\\Migrations\\20240419160653_Added_users_table.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBcAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T16:06:53.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner\\Data\\Models\\User.cs",
+              "RelativeDocumentMoniker": "LifePlanner\\LifePlanner\\Data\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner\\Data\\Models\\User.cs",
+              "RelativeToolTip": "LifePlanner\\LifePlanner\\Data\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T15:50:58.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner\\appsettings.json",
+              "RelativeDocumentMoniker": "LifePlanner\\LifePlanner\\appsettings.json",
+              "ToolTip": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner\\appsettings.json",
+              "RelativeToolTip": "LifePlanner\\LifePlanner\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-19T15:46:17.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner\\Program.cs",
+              "RelativeDocumentMoniker": "LifePlanner\\LifePlanner\\Program.cs",
+              "ToolTip": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner\\Program.cs",
+              "RelativeToolTip": "LifePlanner\\LifePlanner\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T20:14:15.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner\\Data\\MainDBContext.cs",
+              "RelativeDocumentMoniker": "LifePlanner\\LifePlanner\\Data\\MainDBContext.cs",
+              "ToolTip": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner\\Data\\MainDBContext.cs",
+              "RelativeToolTip": "LifePlanner\\LifePlanner\\Data\\MainDBContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T20:11:01.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Weather.razor",
+              "DocumentMoniker": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner\\Components\\Pages\\Weather.razor",
+              "RelativeDocumentMoniker": "LifePlanner\\LifePlanner\\Components\\Pages\\Weather.razor",
+              "ToolTip": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner\\Components\\Pages\\Weather.razor",
+              "RelativeToolTip": "LifePlanner\\LifePlanner\\Components\\Pages\\Weather.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-17T20:09:46.725Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
