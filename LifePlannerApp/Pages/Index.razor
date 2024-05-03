@@ -1,0 +1,39 @@
+﻿@page "/"
+@using LifePlannerApp.Services
+@using LifePlannerApp.Data.Models
+@inject UserService userService;
+
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+<EditForm Model=@user OnValidSubmit="HandleSubmit">
+
+    <label for="UserNameInput">Username</label>
+    <InputText id="UserNameInput" @bind-Value="@user.UserName"></InputText>
+    <label for="FirstNameInput">First Name</label>
+    <InputText id="FirstNameInput" @bind-Value="@user.FirstName"></InputText>
+    <label for="LastNameInput">Last Name</label>
+    <InputText id="LastNameInput" @bind-Value="@user.LastName"></InputText>
+    <label for="PasswordInput">Password</label>
+    <InputText id="PasswordInput" @bind-Value="@user.Password"></InputText>
+    <button type="submit" class="btn-primary">Create</button>
+</EditForm>
+
+@code {
+    User user = new User();
+
+    public void HandleSubmit(EditContext editContext)
+    {
+        var newUser = (User)editContext.Model;
+        newUser.Token = "testToken";
+        newUser.Email = "zdfsdfsdfsf";
+        newUser.CreatedDate = DateTime.Now;
+        userService.AddUser(newUser);
+    }
+}

@@ -1,0 +1,36 @@
+# Ignore Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore ReSharper files
+_ReSharper*/
+
+# Ignore build artifacts
+bin/
+obj/
+
+# Ignore NuGet packages
+packages/
+
+# Ignore user-specific files
+*.csproj.user
+*.userprefs
+
+# Ignore build and publish files
+publish/
+
+# Ignore Roslyn analyzer cache
+*.analyzers.*
+
+# Ignore Resharper cache files
+*.resharper
+
+# Ignore Rider settings
+.idea/
+*.idea/
+
+# Ignore Visual Studio Code settings
+.vscode/

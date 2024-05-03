@@ -1,6 +1,8 @@
 using LifePlanner.Client.Pages;
 using LifePlanner.Components;
 using LifePlanner.Data;
+using LifePlanner.Services;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,10 +13,19 @@ var connectionString = builder.Configuration.GetConnectionString("Default")
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
     .AddInteractiveWebAssemblyComponents();
-    
-builder.Services.AddDbContextFactory<MainDBContext>((DbContextOptionsBuilder options) => 
+builder.Services.AddTransient<UserService>();
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.Cookie.Name = "auth_token";
+        options.LoginPath = "/Login";
+        options.Cookie.MaxAge = TimeSpan.FromMinutes(30);
+        options.AccessDeniedPath = "/access-denied";
+    });
+builder.Services.AddAuthorization();
+builder.Services.AddCascadingAuthenticationState();
+builder.Services.AddDbContextFactory<MainDBContext>((DbContextOptionsBuilder options) =>
     options.UseSqlServer(connectionString));
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -33,6 +44,8 @@ app.UseHttpsRedirection();
 
 app.UseStaticFiles();
 app.UseAntiforgery();
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()

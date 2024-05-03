@@ -1,0 +1,53 @@
+﻿@page "/NewUser"
+
+@inject UserService userService;
+@inject NavigationManager navigationManager;
+@rendermode InteractiveServer
+@using LifePlanner.Services
+@using LifePlanner.Data.Models
+
+
+<h3>CreateUser</h3>
+
+<EditForm Model=@user OnValidSubmit="HandleSubmit" FormName="UserForms">
+    <div class="mt-3">
+        <label class="form-label" for="UserNameInput">Username</label>
+        <InputText class="form-control" id="UserNameInput" @bind-Value="@user.UserName"></InputText>
+    </div>
+    <div class="mt-3">
+        <label class="form-label" for="FirstNameInput">First Name</label>
+        <InputText class="form-control" id="FirstNameInput" @bind-Value="@user.FirstName"></InputText>
+    </div>
+    <div class="mt-3">
+        <label class="form-label" for="LastNameInput">Last Name</label>
+        <InputText class="form-control" id="LastNameInput" @bind-Value="@user.LastName"></InputText>
+    </div>
+    <div class="mt-3">
+        <label class="form-label" for="EmailInput">Email</label>
+        <InputText class="form-control" id="EmailInput" @bind-Value="@user.Email"></InputText>
+    </div>
+    <div class="mt-3">
+        <label class="form-label" for="PasswordInput">Password</label>
+        <InputText type="password" class="form-control" id="PasswordInput" @bind-Value="@user.Password"></InputText>
+        <ValidationMessage For="@(() => user.Password)" />
+    </div>
+    <div class="mt-3">
+        <button type="submit" class="btn-primary">Create</button>
+    </div>
+</EditForm>
+
+@code {
+    User user = new User();
+
+    public void HandleSubmit(EditContext editContext)
+    {
+        var newUser = (User)editContext.Model;
+        newUser.Token = "testToken";
+        newUser.CreatedDate = DateTime.Now;
+        newUser.UserRole = "User";
+        userService.AddUser(newUser);
+
+        //Redirect to ViewUsers
+        navigationManager.NavigateTo("/login");
+    }
+}
