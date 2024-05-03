@@ -12,6 +12,7 @@ namespace LifePlanner.Data
 
         }
 
-        public DbSet<User> users { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<FinanceData> Finances { get; set; }
     }
 }

@@ -1,7 +1,27 @@
 ﻿@page "/"
+@rendermode InteractiveServer
+@using LifePlanner.Services
+@using LifePlanner.Data.Models
+@inject UserService userService;
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
-
-Welcome to your new app.
+<div class="row">
+    <div class="col-12">
+        <h2 class="fw-bolder">Welcome to the <span class="text-danger">Planning App</span></h2>
+    </div>
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <AuthorizeView>
+                    <NotAuthorized>
+                        <span>You are not logged in. Please <a class="fw-bolder" href="/login">Login</a> or <a class="fw-bolder" href="/NewUser">Register</a></span>
+                    </NotAuthorized>
+                    <Authorized>
+                        <span>Logged in. <b>@context.User.Identity.Name</b>. <a class="fw-bolder" href="/logout">click here</a> to logout.</span>
+                    </Authorized>
+                </AuthorizeView>
+            </div>
+        </div>
+    </div>
+</div>

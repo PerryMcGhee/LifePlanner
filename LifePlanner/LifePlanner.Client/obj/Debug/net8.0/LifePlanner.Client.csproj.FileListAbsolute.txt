@@ -1496,3 +1496,4 @@ C:\Users\Perry\Documents\DevProjects\LifePlanner\LifePlanner\LifePlanner.Client\
 C:\Users\Perry\Documents\DevProjects\LifePlanner\LifePlanner\LifePlanner.Client\obj\Debug\net8.0\compressed\l4hbxf82s3.gz
 C:\Users\Perry\Documents\DevProjects\LifePlanner\LifePlanner\LifePlanner.Client\obj\Debug\net8.0\compressed\ppyb2q4wm4.gz
 C:\Users\Perry\Documents\DevProjects\LifePlanner\LifePlanner\LifePlanner.Client\obj\Debug\net8.0\compressed\xgfq76i57n.gz
+C:\Users\Perry\Documents\DevProjects\LifePlanner\LifePlanner\LifePlanner.Client\obj\Debug\net8.0\LifePlanner.Client.sourcelink.json

@@ -1,0 +1,71 @@
+﻿@page "/ViewUsers"
+
+@inject UserService userService;
+@inject NavigationManager navigationManager;
+@attribute [Authorize(Roles = "Administrator")]
+@rendermode InteractiveServer
+@using LifePlanner.Services
+@using LifePlanner.Data.Models
+@using Microsoft.AspNetCore.Authorization
+
+
+<h3>ViewUsers</h3>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Name 
+            </th>
+            <th>
+                Username
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Created Date
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in userService.GetAllUsers())
+        {
+            <tr>
+                <td>
+                    @user.Id
+                </td>
+                <td>
+                    @user.FirstName @user.LastName
+                </td>
+                <td>
+                    @user.UserName
+                </td>
+                <td>
+                    @user.Email
+                </td>
+                <td>
+                    @user.CreatedDate
+                </td>
+                <td>
+                    <a href="/edit/@user.Id">Edit</a> |
+                    <a href="#" @onclick="(() => DeleteUserOnClick(user.Id))">Delete</a>
+                </td>
+            </tr>
+
+        }
+    </tbody>
+
+</table>
+
+@code {
+    private async Task DeleteUserOnClick(int userId)
+    {
+            userService.DeleteUser(userId);
+            navigationManager.NavigateTo("/ViewUsers", true);
+    }
+}
