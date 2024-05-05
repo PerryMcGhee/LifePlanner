@@ -46,6 +46,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Perry/Documents/DevProjects/LifePlanner/LifePlanner/LifePlanner/Components/Pages/FinanceManagment/FinanceItems.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGaW5hbmNlTWFuYWdtZW50XEZpbmFuY2VJdGVtcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Perry/Documents/DevProjects/LifePlanner/LifePlanner/LifePlanner/Components/Pages/FinanceManagment/FinanceOverview.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGaW5hbmNlTWFuYWdtZW50XEZpbmFuY2VPdmVydmlldy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Perry/Documents/DevProjects/LifePlanner/LifePlanner/LifePlanner/Components/Pages/FinanceManagment/ManageFinanceItem.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGaW5hbmNlTWFuYWdtZW50XE1hbmFnZUZpbmFuY2VJdGVtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Perry/Documents/DevProjects/LifePlanner/LifePlanner/LifePlanner/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 

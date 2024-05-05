@@ -1,0 +1,41 @@
+﻿@page "/ManageFinanceItem/{FinanceType}"
+
+@using LifePlanner.Services
+@using LifePlanner.Data.Models
+@inject NavigationManager navigationManager;
+@inject FinanceService financeService;
+
+<h3>ManageFinanceItem</h3>
+
+<EditForm Model=@financeItem OnValidSubmit="HandleSubmit" FormName="FinanceForms">
+    <div class="mt-3">
+        <label class="form-label" for="Name">Finance Name</label>
+        <InputText class="form-control" id="Name" @bind-Value="@financeItem.Name"></InputText>
+    </div>
+    <div class="mt-3">
+        <label class="form-label" for="Value">Amount</label>
+        <InputNumber step="0.01" class="form-control" id="Value" @bind-Value="@financeItem.value"></InputNumber>
+    </div>
+    <div class="mt-3">
+        <button type="submit" class="btn-primary">Create</button>
+    </div>
+</EditForm>
+
+@code {
+
+    FinanceData financeItem = new FinanceData();
+    [Parameter]
+    public string FinanceType { get; set; }
+
+    public void HandleSubmit(EditContext editContext)
+    {
+        var financeItem = (FinanceData)editContext.Model;
+        financeItem.Type = FinanceType;
+        financeItem.UserId = 15;
+        financeService.AddFinanceItem(financeItem);
+
+        //Redirect to ViewUsers
+        navigationManager.NavigateTo("/login");
+    }
+
+}

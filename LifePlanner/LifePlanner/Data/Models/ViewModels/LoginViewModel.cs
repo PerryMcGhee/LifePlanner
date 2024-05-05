@@ -8,5 +8,6 @@ namespace LifePlanner.Data.Models.ViewModels
         public string? UserName { get; set; }
         [Required(AllowEmptyStrings = false, ErrorMessage = "Please Provide Password")]
         public string? Password { get; set; }
+
     }
 }

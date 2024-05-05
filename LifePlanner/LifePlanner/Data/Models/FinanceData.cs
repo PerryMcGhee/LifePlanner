@@ -9,6 +9,7 @@ namespace LifePlanner.Data.Models
         public string Name { get; set; }
         public string Type  { get; set;}
         public double value { get; set;}
+        public int UserId { get; set; }
         public User User { get; set; }
 
     }

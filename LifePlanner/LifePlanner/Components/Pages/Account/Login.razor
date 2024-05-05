@@ -42,7 +42,6 @@
     public HttpContext? HttpContext { get; set; }
     [SupplyParameterFromForm]
     public LoginViewModel Model { get; set; } = new();
-
     private string? errorMessage;
     private async Task Authenticate()
     {
@@ -56,6 +55,7 @@
         var claims = new List<Claim>
         {
             new Claim(ClaimTypes.Name, Model.UserName),
+            new Claim("UserId", userAccount.Id.ToString()),
             new Claim(ClaimTypes.Role, userAccount.UserRole)
         };
 
@@ -64,8 +64,4 @@
         await HttpContext.SignInAsync(principal);
         navigationManager.NavigateTo("/");
     }
-
-
-
-
 }

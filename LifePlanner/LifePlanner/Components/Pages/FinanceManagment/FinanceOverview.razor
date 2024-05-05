@@ -1,0 +1,79 @@
+﻿@page "/FinanceOverview"
+
+@rendermode InteractiveServer
+@using LifePlanner.Services
+@using LifePlanner.Data.Models
+@inject FinanceService financeService;
+
+<h3>Finance Overview  </h3>
+
+
+
+
+
+<PageTitle>Finance Management</PageTitle>
+
+<AuthorizeView>
+    <NotAuthorized>
+        <span>You are not logged in. Please <a class="fw-bolder" href="/login">Login</a> or <a class="fw-bolder" href="/NewUser">Register</a></span>
+    </NotAuthorized>
+    <Authorized>
+        @if (financeService.GetAllFinanceDataForUser() == null || !financeService.GetAllFinanceDataForUser().Any())
+        {
+            <p>You currrently have no finance figures entered. <a class="fw-bolder" href="/FinanceItems">Click here</a> to add some items and get started.</p>
+        }
+        else
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            ID
+                        </th>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Type
+                        </th>
+                        <th>
+                            value
+                        </th>
+                        <th>
+                            UserId
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var user in financeService.GetAllFinanceDataForUser())
+                    {
+                        <tr>
+                            <td>
+                                @user.Id
+                            </td>
+                            <td>
+                                @user.Name
+                            </td>
+                            <td>
+                                @user.Type
+                            </td>
+                            <td>
+                                @user.value
+                            </td>
+                            <td>
+                                @user.UserId
+                            </td>
+                        </tr>
+
+                    }
+                </tbody>
+
+            </table>
+        }
+
+    </Authorized>
+</AuthorizeView>
+
+@code {
+
+}

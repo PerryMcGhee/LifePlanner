@@ -1,0 +1,261 @@
+﻿@page "/FinanceItems"
+
+@rendermode InteractiveServer
+@using LifePlanner.Services
+@using LifePlanner.Data.Models
+@inject NavigationManager UriHelper;
+@inject FinanceService financeService;
+
+
+<h3>Finance Items</h3>
+
+<AuthorizeView>
+    <NotAuthorized>
+        <span>You are not logged in. Please <a class="fw-bolder" href="/login">Login</a> or <a class="fw-bolder" href="/NewUser">Register</a></span>
+    </NotAuthorized>
+    <Authorized>
+
+        <!-- Income -->
+
+        <div class="col-12">
+            <div class="card">
+                @if (financeService.GetFinanceDataType("Income") == null || !financeService.GetFinanceDataType("Income").Any())
+                {
+                    <p>You currrently have no income finance figures entered. <a class="fw-bolder" href="/FinanceItems">Click here</a> to add some items and get started.</p>
+                }
+                else
+                {
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    ID
+                                </th>
+                                <th>
+                                    Name
+                                </th>
+                                <th>
+                                    Type
+                                </th>
+                                <th>
+                                    value
+                                </th>
+                                <th>
+                                    UserId
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var user in financeService.GetFinanceDataType("Income"))
+                            {
+                                <tr>
+                                    <td>
+                                        @user.Id
+                                    </td>
+                                    <td>
+                                        @user.Name
+                                    </td>
+                                    <td>
+                                        @user.Type
+                                    </td>
+                                    <td>
+                                        @user.value
+                                    </td>
+                                    <td>
+                                        @user.UserId
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+
+                    </table>
+                }
+            </div>
+        </div>
+
+        <!-- Outgoing -->
+
+        <div class="col-12">
+            <div class="card">
+                @if (financeService.GetFinanceDataType("Outgoing") == null || !financeService.GetFinanceDataType("Outgoing").Any())
+                {
+                    <p>You currrently have no outgoing finance figures entered. <a class="fw-bolder" href="/FinanceItems" @onclick="() => OnClick(tempType)">Click here</a> to add some items and get started.</p>
+                }
+                else
+                {
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    ID
+                                </th>
+                                <th>
+                                    Name
+                                </th>
+                                <th>
+                                    Type
+                                </th>
+                                <th>
+                                    value
+                                </th>
+                                <th>
+                                    UserId
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var user in financeService.GetFinanceDataType("Outgoing"))
+                            {
+                                <tr>
+                                    <td>
+                                        @user.Id
+                                    </td>
+                                    <td>
+                                        @user.Name
+                                    </td>
+                                    <td>
+                                        @user.Type
+                                    </td>
+                                    <td>
+                                        @user.value
+                                    </td>
+                                    <td>
+                                        @user.UserId
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+
+                    </table>
+                }
+            </div>
+        </div>
+
+        <!-- Savings -->
+
+        <div class="col-12">
+            <div class="card">
+                @if (financeService.GetFinanceDataType("Saving") == null || !financeService.GetFinanceDataType("Saving").Any())
+                {
+                    <p>You currrently have no savings finance figures entered. <a class="fw-bolder" href="/FinanceItems">Click here</a> to add some items and get started.</p>
+                }
+                else
+                {
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    ID
+                                </th>
+                                <th>
+                                    Name
+                                </th>
+                                <th>
+                                    Type
+                                </th>
+                                <th>
+                                    value
+                                </th>
+                                <th>
+                                    UserId
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var user in financeService.GetFinanceDataType("Saving"))
+                            {
+                                <tr>
+                                    <td>
+                                        @user.Id
+                                    </td>
+                                    <td>
+                                        @user.Name
+                                    </td>
+                                    <td>
+                                        @user.Type
+                                    </td>
+                                    <td>
+                                        @user.value
+                                    </td>
+                                    <td>
+                                        @user.UserId
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+
+                    </table>
+                }
+            </div>
+        </div>
+
+        <!-- Debt -->
+
+        <div class="col-12">
+            <div class="card">
+                @if (financeService.GetFinanceDataType("Debt") == null || !financeService.GetFinanceDataType("Debt").Any())
+                {
+                    <p>You currrently have no debt finance figures entered. <a class="fw-bolder" href="/FinanceItems">Click here</a> to add some items and get started.</p>
+                }
+                else
+                {
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    ID
+                                </th>
+                                <th>
+                                    Name
+                                </th>
+                                <th>
+                                    Type
+                                </th>
+                                <th>
+                                    value
+                                </th>
+                                <th>
+                                    UserId
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var user in financeService.GetFinanceDataType("Debt"))
+                            {
+                                <tr>
+                                    <td>
+                                        @user.Id
+                                    </td>
+                                    <td>
+                                        @user.Name
+                                    </td>
+                                    <td>
+                                        @user.Type
+                                    </td>
+                                    <td>
+                                        @user.value
+                                    </td>
+                                    <td>
+                                        @user.UserId
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+
+                    </table>
+                }
+            </div>
+        </div>
+
+    </Authorized>
+</AuthorizeView>
+
+@code {
+    string tempType = "Outgoing";
+
+    private void OnClick(string type)
+    {
+        UriHelper.NavigateTo($"ManageFinanceItem/{type}");
+    }
+
+}

@@ -13,7 +13,9 @@ var connectionString = builder.Configuration.GetConnectionString("Default")
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
     .AddInteractiveWebAssemblyComponents();
+builder.Services.AddHttpContextAccessor();
 builder.Services.AddTransient<UserService>();
+builder.Services.AddTransient<FinanceService>();
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
