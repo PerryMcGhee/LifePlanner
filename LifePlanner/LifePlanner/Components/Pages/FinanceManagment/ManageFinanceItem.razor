@@ -4,17 +4,19 @@
 @using LifePlanner.Data.Models
 @inject NavigationManager navigationManager;
 @inject FinanceService financeService;
+@rendermode InteractiveServer
+
 
 <h3>ManageFinanceItem</h3>
 
-<EditForm Model=@financeItem OnValidSubmit="HandleSubmit" FormName="FinanceForms">
+<EditForm Model=@fItem OnValidSubmit="HandleSubmit" FormName="FinanceForms">
     <div class="mt-3">
-        <label class="form-label" for="Name">Finance Name</label>
-        <InputText class="form-control" id="Name" @bind-Value="@financeItem.Name"></InputText>
+        <label class="form-label" for="NameInput">Finance Name</label>
+        <InputText class="form-control" id="NameInput" @bind-Value="@fItem.Name"></InputText>
     </div>
     <div class="mt-3">
-        <label class="form-label" for="Value">Amount</label>
-        <InputNumber step="0.01" class="form-control" id="Value" @bind-Value="@financeItem.value"></InputNumber>
+        <label class="form-label" for="ValueInput">Amount</label>
+        <InputNumber step="0.01" class="form-control" id="ValueInput" @bind-Value="@fItem.value"></InputNumber>
     </div>
     <div class="mt-3">
         <button type="submit" class="btn-primary">Create</button>
@@ -23,19 +25,23 @@
 
 @code {
 
-    FinanceData financeItem = new FinanceData();
+    FinanceData fItem = new FinanceData();
     [Parameter]
     public string FinanceType { get; set; }
 
     public void HandleSubmit(EditContext editContext)
     {
+        if (!editContext.Validate())
+            return; // If validation fails, do not proceed
+
+        Console.WriteLine(editContext.Properties);
         var financeItem = (FinanceData)editContext.Model;
         financeItem.Type = FinanceType;
-        financeItem.UserId = 15;
         financeService.AddFinanceItem(financeItem);
 
+
         //Redirect to ViewUsers
-        navigationManager.NavigateTo("/login");
+        navigationManager.NavigateTo("/");
     }
 
 }

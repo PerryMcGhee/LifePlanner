@@ -21,7 +21,7 @@
             <div class="card">
                 @if (financeService.GetFinanceDataType("Income") == null || !financeService.GetFinanceDataType("Income").Any())
                 {
-                    <p>You currrently have no income finance figures entered. <a class="fw-bolder" href="/FinanceItems">Click here</a> to add some items and get started.</p>
+                    <p>You currrently have no income finance figures entered. <a class="fw-bolder" @onclick="() => OnClick(TempType.Income.ToString())">Click here</a> to add some items and get started.</p>
                 }
                 else
                 {
@@ -78,8 +78,9 @@
         <div class="col-12">
             <div class="card">
                 @if (financeService.GetFinanceDataType("Outgoing") == null || !financeService.GetFinanceDataType("Outgoing").Any())
-                {
-                    <p>You currrently have no outgoing finance figures entered. <a class="fw-bolder" href="/FinanceItems" @onclick="() => OnClick(tempType)">Click here</a> to add some items and get started.</p>
+                { 
+
+                    <p>You currrently have no outgoing finance figures entered. <a class="fw-bolder" @onclick="() => OnClick(TempType.Outgoing.ToString())">Click here</a> to add some items and get started.</p>
                 }
                 else
                 {
@@ -137,7 +138,7 @@
             <div class="card">
                 @if (financeService.GetFinanceDataType("Saving") == null || !financeService.GetFinanceDataType("Saving").Any())
                 {
-                    <p>You currrently have no savings finance figures entered. <a class="fw-bolder" href="/FinanceItems">Click here</a> to add some items and get started.</p>
+                    <p>You currrently have no savings finance figures entered. <a class="fw-bolder" @onclick="() => OnClick(TempType.Saving.ToString())">Click here</a> to add some items and get started.</p>
                 }
                 else
                 {
@@ -195,7 +196,7 @@
             <div class="card">
                 @if (financeService.GetFinanceDataType("Debt") == null || !financeService.GetFinanceDataType("Debt").Any())
                 {
-                    <p>You currrently have no debt finance figures entered. <a class="fw-bolder" href="/FinanceItems">Click here</a> to add some items and get started.</p>
+                    <p>You currrently have no debt finance figures entered. <a class="fw-bolder" @onclick="() => OnClick(TempType.Debt.ToString())">Click here</a> to add some items and get started.</p>
                 }
                 else
                 {
@@ -251,7 +252,13 @@
 </AuthorizeView>
 
 @code {
-    string tempType = "Outgoing";
+    public enum TempType
+    {
+        Income,
+        Outgoing,
+        Debt,
+        Saving
+    }
 
     private void OnClick(string type)
     {

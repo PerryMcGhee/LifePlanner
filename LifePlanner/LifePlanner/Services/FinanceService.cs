@@ -22,6 +22,8 @@ namespace LifePlanner.Services
         {
             using (var context = _dbContextFactory.CreateDbContext())
             {
+                var userId = GetLoggedInUserId();
+                fItem.UserId = userId.Value;
                 context.Finances.Add(fItem);
                 context.SaveChanges();
             }
