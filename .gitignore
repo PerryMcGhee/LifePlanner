@@ -34,3 +34,4 @@ publish/
 
 # Ignore Visual Studio Code settings
 .vscode/
+/LifePlanner/LifePlanner/appsettings.Development.json

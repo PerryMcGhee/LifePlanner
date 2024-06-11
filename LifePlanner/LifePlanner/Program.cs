@@ -4,10 +4,9 @@ using LifePlanner.Data;
 using LifePlanner.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure; 
 
 var builder = WebApplication.CreateBuilder(args);
-var connectionString = builder.Configuration.GetConnectionString("Default")
-    ?? throw new NullReferenceException("No connection string in config");
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
@@ -26,8 +25,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     });
 builder.Services.AddAuthorization();
 builder.Services.AddCascadingAuthenticationState();
-builder.Services.AddDbContextFactory<MainDBContext>((DbContextOptionsBuilder options) =>
-    options.UseSqlServer(connectionString));
+builder.Services.AddDbContextFactory<MainDBContext>(options => options.UseMySql(builder.Configuration.GetConnectionString("Default"), new MySqlServerVersion(new Version(15,1)), options => options.EnableRetryOnFailure(3, TimeSpan.FromSeconds(2), null)));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

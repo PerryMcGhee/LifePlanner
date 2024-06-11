@@ -1,6 +1,7 @@
 ﻿using LifePlanner.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
+using Pomelo.EntityFrameworkCore;
 
 namespace LifePlanner.Data
 {

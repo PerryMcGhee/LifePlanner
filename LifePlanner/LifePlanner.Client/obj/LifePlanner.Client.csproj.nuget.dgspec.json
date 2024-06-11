@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner.Client\\LifePlanner.Client.csproj": {}
+    "D:\\Dev\\LifePlanner\\LifePlanner\\LifePlanner.Client\\LifePlanner.Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner.Client\\LifePlanner.Client.csproj": {
+    "D:\\Dev\\LifePlanner\\LifePlanner\\LifePlanner.Client\\LifePlanner.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner.Client\\LifePlanner.Client.csproj",
+        "projectUniqueName": "D:\\Dev\\LifePlanner\\LifePlanner\\LifePlanner.Client\\LifePlanner.Client.csproj",
         "projectName": "LifePlanner.Client",
-        "projectPath": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner.Client\\LifePlanner.Client.csproj",
-        "packagesPath": "C:\\Users\\Perry\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Perry\\Documents\\DevProjects\\LifePlanner\\LifePlanner\\LifePlanner.Client\\obj\\",
+        "projectPath": "D:\\Dev\\LifePlanner\\LifePlanner\\LifePlanner.Client\\LifePlanner.Client.csproj",
+        "packagesPath": "C:\\Users\\perry\\.nuget\\packages\\",
+        "outputPath": "D:\\Dev\\LifePlanner\\LifePlanner\\LifePlanner.Client\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Perry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\perry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -66,13 +71,13 @@
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.4, )",
+              "version": "[8.0.5, )",
               "autoReferenced": true
             },
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.4, )",
+              "version": "[8.0.5, )",
               "autoReferenced": true
             }
           },
@@ -90,7 +95,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[8.0.4, 8.0.4]"
+              "version": "[8.0.5, 8.0.5]"
             }
           ],
           "frameworkReferences": {
@@ -98,7 +103,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

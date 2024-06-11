@@ -9,75 +9,75 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LifePlanner
 build_property.RootNamespace = LifePlanner
-build_property.ProjectDir = C:\Users\Perry\Documents\DevProjects\LifePlanner\LifePlanner\LifePlanner\
+build_property.ProjectDir = D:\Dev\LifePlanner\LifePlanner\LifePlanner\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Perry\Documents\DevProjects\LifePlanner\LifePlanner\LifePlanner
+build_property.MSBuildProjectDirectory = D:\Dev\LifePlanner\LifePlanner\LifePlanner
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Perry/Documents/DevProjects/LifePlanner/LifePlanner/LifePlanner/Components/App.razor]
+[D:/Dev/LifePlanner/LifePlanner/LifePlanner/Components/App.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Perry/Documents/DevProjects/LifePlanner/LifePlanner/LifePlanner/Components/Pages/Account/AccessDenied.razor]
+[D:/Dev/LifePlanner/LifePlanner/LifePlanner/Components/Pages/Account/AccessDenied.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2NvdW50XEFjY2Vzc0RlbmllZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Perry/Documents/DevProjects/LifePlanner/LifePlanner/LifePlanner/Components/Pages/Account/CreateUser.razor]
+[D:/Dev/LifePlanner/LifePlanner/LifePlanner/Components/Pages/Account/CreateUser.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2NvdW50XENyZWF0ZVVzZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Perry/Documents/DevProjects/LifePlanner/LifePlanner/LifePlanner/Components/Pages/Account/Login.razor]
+[D:/Dev/LifePlanner/LifePlanner/LifePlanner/Components/Pages/Account/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2NvdW50XExvZ2luLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Perry/Documents/DevProjects/LifePlanner/LifePlanner/LifePlanner/Components/Pages/Account/Logout.razor]
+[D:/Dev/LifePlanner/LifePlanner/LifePlanner/Components/Pages/Account/Logout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2NvdW50XExvZ291dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Perry/Documents/DevProjects/LifePlanner/LifePlanner/LifePlanner/Components/Pages/DbAdmin/ViewUsers.razor]
+[D:/Dev/LifePlanner/LifePlanner/LifePlanner/Components/Pages/DbAdmin/ViewUsers.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEYkFkbWluXFZpZXdVc2Vycy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Perry/Documents/DevProjects/LifePlanner/LifePlanner/LifePlanner/Components/Pages/Error.razor]
+[D:/Dev/LifePlanner/LifePlanner/LifePlanner/Components/Pages/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Perry/Documents/DevProjects/LifePlanner/LifePlanner/LifePlanner/Components/Pages/FinanceManagment/FinanceItems.razor]
+[D:/Dev/LifePlanner/LifePlanner/LifePlanner/Components/Pages/FinanceManagment/FinanceItems.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGaW5hbmNlTWFuYWdtZW50XEZpbmFuY2VJdGVtcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Perry/Documents/DevProjects/LifePlanner/LifePlanner/LifePlanner/Components/Pages/FinanceManagment/FinanceOverview.razor]
+[D:/Dev/LifePlanner/LifePlanner/LifePlanner/Components/Pages/FinanceManagment/FinanceOverview.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGaW5hbmNlTWFuYWdtZW50XEZpbmFuY2VPdmVydmlldy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Perry/Documents/DevProjects/LifePlanner/LifePlanner/LifePlanner/Components/Pages/FinanceManagment/ManageFinanceItem.razor]
+[D:/Dev/LifePlanner/LifePlanner/LifePlanner/Components/Pages/FinanceManagment/ManageFinanceItem.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xGaW5hbmNlTWFuYWdtZW50XE1hbmFnZUZpbmFuY2VJdGVtLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Perry/Documents/DevProjects/LifePlanner/LifePlanner/LifePlanner/Components/Pages/Home.razor]
+[D:/Dev/LifePlanner/LifePlanner/LifePlanner/Components/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Perry/Documents/DevProjects/LifePlanner/LifePlanner/LifePlanner/Components/Pages/Weather.razor]
+[D:/Dev/LifePlanner/LifePlanner/LifePlanner/Components/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Perry/Documents/DevProjects/LifePlanner/LifePlanner/LifePlanner/Components/Routes.razor]
+[D:/Dev/LifePlanner/LifePlanner/LifePlanner/Components/Routes.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Perry/Documents/DevProjects/LifePlanner/LifePlanner/LifePlanner/Components/_Imports.razor]
+[D:/Dev/LifePlanner/LifePlanner/LifePlanner/Components/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Perry/Documents/DevProjects/LifePlanner/LifePlanner/LifePlanner/Components/Layout/MainLayout.razor]
+[D:/Dev/LifePlanner/LifePlanner/LifePlanner/Components/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-owz79qfkcv
 
-[C:/Users/Perry/Documents/DevProjects/LifePlanner/LifePlanner/LifePlanner/Components/Layout/NavMenu.razor]
+[D:/Dev/LifePlanner/LifePlanner/LifePlanner/Components/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-54wwc5831c
