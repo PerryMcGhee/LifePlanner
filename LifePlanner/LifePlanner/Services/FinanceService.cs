@@ -29,6 +29,49 @@ namespace LifePlanner.Services
             }
         }
 
+        public void UpdateFinanceItem(FinanceData updatedItem)
+        {
+            using (var context = _dbContextFactory.CreateDbContext())
+            {
+                var userId = GetLoggedInUserId();
+
+                // If the user is not logged in or if user ID is not found, return
+                if (!userId.HasValue)
+                    return;
+
+                var existingItem = context.Finances.FirstOrDefault(f => f.Id == updatedItem.Id && f.UserId == userId.Value);
+
+                if (existingItem != null)
+                {
+                    existingItem.Name = updatedItem.Name;
+                    existingItem.value = updatedItem.value;
+                    existingItem.Type = updatedItem.Type;
+
+                    context.SaveChanges();
+                }
+            }
+        }
+
+        public void DeleteFinanceItem(int itemId)
+        {
+            using (var context = _dbContextFactory.CreateDbContext())
+            {
+                var userId = GetLoggedInUserId();
+
+                // If the user is not logged in or if user ID is not found, return
+                if (!userId.HasValue)
+                    return;
+
+                var item = context.Finances.FirstOrDefault(f => f.Id == itemId && f.UserId == userId.Value);
+
+                if (item != null)
+                {
+                    context.Finances.Remove(item);
+                    context.SaveChanges();
+                }
+            }
+        }
+
         public IEnumerable<FinanceData> GetAllFinanceDataForUser()
         {
             var userId = GetLoggedInUserId();

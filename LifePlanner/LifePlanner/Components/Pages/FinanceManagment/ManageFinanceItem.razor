@@ -6,7 +6,6 @@
 @inject FinanceService financeService;
 @rendermode InteractiveServer
 
-
 <h3>ManageFinanceItem</h3>
 
 <EditForm Model=@fItem OnValidSubmit="HandleSubmit" FormName="FinanceForms">
@@ -17,6 +16,7 @@
     <div class="mt-3">
         <label class="form-label" for="ValueInput">Amount</label>
         <InputNumber step="0.01" class="form-control" id="ValueInput" @bind-Value="@fItem.value"></InputNumber>
+        <div>@string.Format("£{0:N2}", fItem.value)</div>
     </div>
     <div class="mt-3">
         <button type="submit" class="btn-primary">Create</button>
@@ -24,7 +24,6 @@
 </EditForm>
 
 @code {
-
     FinanceData fItem = new FinanceData();
     [Parameter]
     public string FinanceType { get; set; }
@@ -39,9 +38,7 @@
         financeItem.Type = FinanceType;
         financeService.AddFinanceItem(financeItem);
 
-
-        //Redirect to ViewUsers
-        navigationManager.NavigateTo("/");
+        // Redirect to FinanceItems
+        navigationManager.NavigateTo("/FinanceItems");
     }
-
 }

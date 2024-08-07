@@ -36,12 +36,30 @@
     </div>
 </EditForm>
 
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <div class="alert alert-danger mt-3">@errorMessage</div>
+}
+
 @code {
     User user = new User();
+    private string? errorMessage;
 
     public void HandleSubmit(EditContext editContext)
     {
         var newUser = (User)editContext.Model;
+
+        if (userService.GetUserByUsername(newUser.UserName) != null)
+        {
+            errorMessage = "Username already exists.";
+            return;
+        }
+
+        if (userService.GetUserByEmail(newUser.Email) != null)
+        {
+            errorMessage = "Email already exists.";
+            return;
+        }
         newUser.Token = "testToken";
         newUser.CreatedDate = DateTime.Now;
         newUser.UserRole = "User";

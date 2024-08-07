@@ -5,11 +5,7 @@
 @using LifePlanner.Data.Models
 @inject FinanceService financeService;
 
-<h3>Finance Overview  </h3>
-
-
-
-
+<h3>Finance Overview</h3>
 
 <PageTitle>Finance Management</PageTitle>
 
@@ -20,60 +16,129 @@
     <Authorized>
         @if (financeService.GetAllFinanceDataForUser() == null || !financeService.GetAllFinanceDataForUser().Any())
         {
-            <p>You currrently have no finance figures entered. <a class="fw-bolder" href="/FinanceItems">Click here</a> to add some items and get started.</p>
+            <p>You currently have no finance figures entered. <a class="fw-bolder" href="/FinanceItems">Click here</a> to add some items and get started.</p>
         }
         else
         {
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>
-                            ID
-                        </th>
-                        <th>
-                            Name
-                        </th>
-                        <th>
-                            Type
-                        </th>
-                        <th>
-                            value
-                        </th>
-                        <th>
-                            UserId
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var user in financeService.GetAllFinanceDataForUser())
-                    {
+            <div>
+                <h4>Report</h4>
+                <table class="table">
+                    <thead>
                         <tr>
-                            <td>
-                                @user.Id
-                            </td>
-                            <td>
-                                @user.Name
-                            </td>
-                            <td>
-                                @user.Type
-                            </td>
-                            <td>
-                                @user.value
-                            </td>
-                            <td>
-                                @user.UserId
-                            </td>
+                            <th>Metric</th>
+                            <th>Value</th>
                         </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Net Per Month</td>
+                            <td>@string.Format("£{0:N2}", NetPerMonth)</td>
+                        </tr>
+                        <tr>
+                            <td>Net Savings</td>
+                            <td>@string.Format("£{0:N2}", NetSavings)</td>
+                        </tr>
+                        <tr>
+                            <td>Total Savings</td>
+                            <td>@string.Format("£{0:N2}", TotalSavings)</td>
+                        </tr>
+                        <tr>
+                            <td>Total Debt</td>
+                            <td>@string.Format("£{0:N2}", TotalDebt)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
+            var groupedFinanceData = financeService.GetAllFinanceDataForUser().GroupBy(f => f.Type);
+
+            @foreach (var group in groupedFinanceData)
+            {
+                <div>
+                    <h4>@group.Key</h4>
+                    <button @onclick="() => ToggleExpand(group.Key)">@(IsGroupExpanded(group.Key) ? "Collapse" : "Expand")</button>
+                    @if (IsGroupExpanded(group.Key))
+                    {
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Type</th>
+                                    <th>Value</th>
+                                    <th>UserId</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var user in group)
+                                {
+                                    <tr>
+                                        <td>@user.Id</td>
+                                        <td>@user.Name</td>
+                                        <td>@user.Type</td>
+                                        <td>@string.Format("£{0:N2}", user.value)</td>
+                                        <td>@user.UserId</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
                     }
-                </tbody>
-
-            </table>
+                </div>
+            }
         }
-
     </Authorized>
 </AuthorizeView>
 
 @code {
+    private Dictionary<string, bool> expandedGroups = new Dictionary<string, bool>();
 
+    private void ToggleExpand(string groupKey)
+    {
+        if (expandedGroups.ContainsKey(groupKey))
+        {
+            expandedGroups[groupKey] = !expandedGroups[groupKey];
+        }
+        else
+        {
+            expandedGroups[groupKey] = true;
+        }
+    }
+
+    private bool IsGroupExpanded(string groupKey)
+    {
+        return expandedGroups.ContainsKey(groupKey) && expandedGroups[groupKey];
+    }
+
+    private decimal NetPerMonth => CalculateNetPerMonth();
+    private decimal NetSavings => CalculateNetSavings();
+    private decimal TotalSavings => CalculateTotalSavings();
+    private decimal TotalDebt => CalculateTotalDebt();
+
+    private decimal CalculateNetPerMonth()
+    {
+        var financeData = financeService.GetAllFinanceDataForUser();
+        var income = financeData.Where(f => f.Type == "Income").Sum(f => (decimal?)f.value) ?? 0;
+        var outgoings = financeData.Where(f => f.Type == "Outgoing").Sum(f => (decimal?)f.value) ?? 0;
+        return income - outgoings;
+    }
+
+    private decimal CalculateNetSavings()
+    {
+        var financeData = financeService.GetAllFinanceDataForUser();
+        var savings = financeData.Where(f => f.Type == "Savings").Sum(f => (decimal?)f.value) ?? 0;
+        var debt = financeData.Where(f => f.Type == "Debt").Sum(f => (decimal?)f.value) ?? 0;
+        return savings - debt;
+    }
+
+    private decimal CalculateTotalSavings()
+    {
+        var financeData = financeService.GetAllFinanceDataForUser();
+        return financeData.Where(f => f.Type == "Savings").Sum(f => (decimal?)f.value) ?? 0;
+    }
+
+    private decimal CalculateTotalDebt()
+    {
+        var financeData = financeService.GetAllFinanceDataForUser();
+        return financeData.Where(f => f.Type == "Debt").Sum(f => (decimal?)f.value) ?? 0;
+    }
 }

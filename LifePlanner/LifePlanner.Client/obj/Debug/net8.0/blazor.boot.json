@@ -1,15 +1,15 @@
 {
   "mainAssemblyName": "LifePlanner.Client",
   "resources": {
-    "hash": "sha256-9qurWnzllnrrJ/UNLoV1wUYjjmlG1KEslgtjNP5TP5g=",
+    "hash": "sha256-ACKjq/pOEzTPPv1/Us3QeTEEk4sHu1ybIZF28hSidGE=",
     "jsModuleNative": {
-      "dotnet.native.8.0.5.c30nynnlny.js": "sha256-boyHe+0RMZDkzBKGhsrnXPhPg3oZ6UqJnTUzngJPjNY="
+      "dotnet.native.8.0.7.wvjabwkf9w.js": "sha256-tFsxPBbhkdn6GKNBKvCRLzrfAHdyM86odYTe0MtrwMk="
     },
     "jsModuleRuntime": {
-      "dotnet.runtime.8.0.5.x616ireo8k.js": "sha256-5oi05+Ql/1JzyAphppAHmbRquli4a3/0XLMa8mQDKn8="
+      "dotnet.runtime.8.0.7.nye4ehtk64.js": "sha256-soZyw6XWXOLKhA26AOyzSpCP5cAsw1wvhdPHSYNTMfQ="
     },
     "wasmNative": {
-      "dotnet.native.wasm": "sha256-b3QtgAqvT5FoNyYgoEYsdE4zF5C1Is6lhQ8VEkROor8="
+      "dotnet.native.wasm": "sha256-ApuqKsuYqEC0ZTUIUV5mIV1IIRYYCwmOiB912jgs8CQ="
     },
     "icu": {
       "icudt_CJK.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -250,10 +250,10 @@
       "mscorlib.wasm": "sha256-XvLAB5IyfVSmj5aaGnPwgVFaaZz8jXmbN8WmeopiPBM=",
       "netstandard.wasm": "sha256-TbMssdnuTiKq1gjTPkpgROAuWN0uhvPnagvWR+wAgNs=",
       "System.Private.CoreLib.wasm": "sha256-sscg+Efk8ROPq+q4IVmhShzITuoOYvB8Bsc+Mp9vcSM=",
-      "LifePlanner.Client.wasm": "sha256-w7Vtw0ZZ6wEG2oPnV0e5QGMRzDu0NOG8GU2Wt8KduZA="
+      "LifePlanner.Client.wasm": "sha256-D1Jf5b8qiPAjTxbWS9WIIryk5NA1UdI4gNiIj8HnS1U="
     },
     "pdb": {
-      "LifePlanner.Client.pdb": "sha256-586ClUbgrzVLjWz/8z/MRWDS1F/DG6SOLCuyv3b2q/8="
+      "LifePlanner.Client.pdb": "sha256-v23ibsKXzF+78PZrFKhTsaWv3Ug1hwX7xubJIejQKuA="
     },
     "satelliteResources": {
       "cs": {

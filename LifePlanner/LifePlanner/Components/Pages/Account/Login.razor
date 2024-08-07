@@ -7,6 +7,7 @@
 @using Microsoft.AspNetCore.Authentication.Cookies
 @inject MainDBContext dbContext
 @inject NavigationManager navigationManager
+@inject UserService userService
 
 <div class="row">
     <div class="col-lg-4 offset-lg-4 pt-4 pb-4 border">
@@ -43,14 +44,16 @@
     [SupplyParameterFromForm]
     public LoginViewModel Model { get; set; } = new();
     private string? errorMessage;
+
     private async Task Authenticate()
     {
-        var userAccount = dbContext.Users.Where(x => x.UserName == Model.UserName).FirstOrDefault();
-        if(userAccount is null || userAccount.Password != Model.Password)
+        var userAccount = userService.GetUserByUsername(Model.UserName);
+        if (userAccount is null || !userService.VerifyPassword(Model.Password, userAccount.Password))
         {
             errorMessage = "Invalid User name or Password";
             return;
         }
+
 
         var claims = new List<Claim>
         {

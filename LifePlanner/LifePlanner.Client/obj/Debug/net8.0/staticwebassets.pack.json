@@ -1,19 +1,19 @@
 {
   "Files": [
     {
-      "Id": "D:\\Dev\\LifePlanner\\LifePlanner\\LifePlanner.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "C:\\Users\\perry\\source\\repos\\LifePlanner\\LifePlanner\\LifePlanner.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "D:\\Dev\\LifePlanner\\LifePlanner\\LifePlanner.Client\\obj\\Debug\\net8.0\\compressed\\w4x8ngsl4q.gz",
+      "Id": "C:\\Users\\perry\\source\\repos\\LifePlanner\\LifePlanner\\LifePlanner.Client\\obj\\Debug\\net8.0\\compressed\\w4x8ngsl4q.gz",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "D:\\Dev\\LifePlanner\\LifePlanner\\LifePlanner.Client\\wwwroot\\appsettings.Development.json",
+      "Id": "C:\\Users\\perry\\source\\repos\\LifePlanner\\LifePlanner\\LifePlanner.Client\\wwwroot\\appsettings.Development.json",
       "PackagePath": "staticwebassets\\appsettings.Development.json"
     },
     {
-      "Id": "D:\\Dev\\LifePlanner\\LifePlanner\\LifePlanner.Client\\wwwroot\\appsettings.json",
+      "Id": "C:\\Users\\perry\\source\\repos\\LifePlanner\\LifePlanner\\LifePlanner.Client\\wwwroot\\appsettings.json",
       "PackagePath": "staticwebassets\\appsettings.json"
     },
     {

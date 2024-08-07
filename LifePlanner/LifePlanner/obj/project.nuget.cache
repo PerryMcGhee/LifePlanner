@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dnfieXnKmWI=",
+  "dgSpecHash": "9kbpOBh7cnc=",
   "success": true,
-  "projectFilePath": "D:\\Dev\\LifePlanner\\LifePlanner\\LifePlanner\\LifePlanner.csproj",
+  "projectFilePath": "C:\\Users\\perry\\source\\repos\\LifePlanner\\LifePlanner\\LifePlanner\\LifePlanner.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\perry\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\perry\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
