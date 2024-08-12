@@ -38,6 +38,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2NvdW50XExvZ291dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/perry/source/repos/LifePlanner/LifePlanner/LifePlanner/Components/Pages/DbAdmin/EditUser.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEYkFkbWluXEVkaXRVc2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/perry/source/repos/LifePlanner/LifePlanner/LifePlanner/Components/Pages/DbAdmin/ViewUsers.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xEYkFkbWluXFZpZXdVc2Vycy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

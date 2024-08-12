@@ -15,9 +15,9 @@ namespace LifePlanner.Services
             _dbContextFactory = dbContextFactory;
         }
 
-        public void AddUser (User user)
+        public void AddUser(User user)
         {
-            using(var context = _dbContextFactory.CreateDbContext())
+            using (var context = _dbContextFactory.CreateDbContext())
             {
                 user.Password = HashPassword(user.Password);
                 context.Users.Add(user);
@@ -33,35 +33,51 @@ namespace LifePlanner.Services
             }
         }
 
-        public User GetUserByName (string firstName)
+        public async Task<User> GetUserByIdAsync(int userId)
         {
             using (var context = _dbContextFactory.CreateDbContext())
             {
-                var user = context.Users.SingleOrDefault(x => x.FirstName == firstName);
-                return user;
+                return await context.Users.FindAsync(userId);
             }
         }
+
+        public User GetUserByName(string firstName)
+        {
+            using (var context = _dbContextFactory.CreateDbContext())
+            {
+                return context.Users.SingleOrDefault(x => x.FirstName == firstName);
+            }
+        }
+
         public User GetUserByUsername(string username)
         {
             using (var context = _dbContextFactory.CreateDbContext())
             {
-                var user = context.Users.SingleOrDefault(x => x.UserName == username);
-                return user;
+                return context.Users.SingleOrDefault(x => x.UserName == username);
             }
         }
+
         public User GetUserByEmail(string email)
         {
             using (var context = _dbContextFactory.CreateDbContext())
             {
-                var user = context.Users.SingleOrDefault(x => x.Email == email);
-                return user;
+                return context.Users.SingleOrDefault(x => x.Email == email);
             }
         }
 
-        public void UpdateUser (string firstName, string password)
+        public async Task UpdateUserAsync(User user)
         {
-            var user = GetUserByName (firstName);
-            if (user == null) 
+            using (var context = _dbContextFactory.CreateDbContext())
+            {
+                context.Users.Update(user);
+                await context.SaveChangesAsync();
+            }
+        }
+
+        public void UpdateUser(string firstName, string password)
+        {
+            var user = GetUserByName(firstName);
+            if (user == null)
             {
                 throw new Exception("Customer does not exist");
             }
@@ -73,7 +89,20 @@ namespace LifePlanner.Services
             }
         }
 
-        private string HashPassword(string password)
+        public async Task DeleteUserAsync(int userId)
+        {
+            using (var context = _dbContextFactory.CreateDbContext())
+            {
+                var user = await context.Users.FindAsync(userId);
+                if (user != null)
+                {
+                    context.Users.Remove(user);
+                    await context.SaveChangesAsync();
+                }
+            }
+        }
+
+        public string HashPassword(string password)
         {
             using (var sha256 = SHA256.Create())
             {
@@ -86,20 +115,6 @@ namespace LifePlanner.Services
         {
             var hashOfEnteredPassword = HashPassword(enteredPassword);
             return hashOfEnteredPassword == storedHash;
-        }
-
-
-        public void DeleteUser(int userId)
-        {
-            using (var context = _dbContextFactory.CreateDbContext())
-            {
-                var user = context.Users.Find(userId);
-                if (user != null)
-                {
-                    context.Users.Remove(user);
-                    context.SaveChanges();
-                }
-            }
         }
     }
 }

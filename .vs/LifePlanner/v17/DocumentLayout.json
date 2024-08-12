@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\perry\\source\\repos\\LifePlanner\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|c:\\users\\perry\\source\\repos\\lifeplanner\\lifeplanner\\lifeplanner\\components\\pages\\financemanagment\\financeoverview.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|solutionrelative:lifeplanner\\lifeplanner\\components\\pages\\financemanagment\\financeoverview.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|c:\\users\\perry\\source\\repos\\lifeplanner\\lifeplanner\\lifeplanner\\lifeplanner.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|solutionrelative:lifeplanner\\lifeplanner\\lifeplanner.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|c:\\users\\perry\\source\\repos\\lifeplanner\\lifeplanner\\lifeplanner\\components\\pages\\dbadmin\\edituser.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|solutionrelative:lifeplanner\\lifeplanner\\components\\pages\\dbadmin\\edituser.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|c:\\users\\perry\\source\\repos\\lifeplanner\\lifeplanner\\lifeplanner\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|solutionrelative:lifeplanner\\lifeplanner\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|c:\\users\\perry\\source\\repos\\lifeplanner\\lifeplanner\\lifeplanner\\components\\pages\\dbadmin\\viewusers.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|solutionrelative:lifeplanner\\lifeplanner\\components\\pages\\dbadmin\\viewusers.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|c:\\users\\perry\\source\\repos\\lifeplanner\\lifeplanner\\lifeplanner\\components\\pages\\financemanagment\\financeitems.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|solutionrelative:lifeplanner\\lifeplanner\\components\\pages\\financemanagment\\financeitems.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|c:\\users\\perry\\source\\repos\\lifeplanner\\lifeplanner\\lifeplanner\\components\\pages\\financemanagment\\financeoverview.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|solutionrelative:lifeplanner\\lifeplanner\\components\\pages\\financemanagment\\financeoverview.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|c:\\users\\perry\\source\\repos\\lifeplanner\\lifeplanner\\lifeplanner\\components\\pages\\financemanagment\\managefinanceitem.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -21,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|c:\\users\\perry\\source\\repos\\lifeplanner\\lifeplanner\\lifeplanner\\data\\models\\financedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|solutionrelative:lifeplanner\\lifeplanner\\data\\models\\financedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|c:\\users\\perry\\source\\repos\\lifeplanner\\lifeplanner\\lifeplanner\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|solutionrelative:lifeplanner\\lifeplanner\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D66EF23B-B863-42BE-A87E-DD8DA4FA5FA1}|LifePlanner\\LifePlanner\\LifePlanner.csproj|c:\\users\\perry\\source\\repos\\lifeplanner\\lifeplanner\\lifeplanner\\components\\pages\\account\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -46,11 +58,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Login.razor",
               "DocumentMoniker": "C:\\Users\\perry\\source\\repos\\LifePlanner\\LifePlanner\\LifePlanner\\Components\\Pages\\Account\\Login.razor",
               "RelativeDocumentMoniker": "LifePlanner\\LifePlanner\\Components\\Pages\\Account\\Login.razor",
@@ -59,7 +71,18 @@
               "ViewState": "AQIAABsAAAAAAAAAAAAAADcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-06T16:59:23.016Z",
-              "IsPinned": true,
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LifePlanner",
+              "DocumentMoniker": "C:\\Users\\perry\\source\\repos\\LifePlanner\\LifePlanner\\LifePlanner\\LifePlanner.csproj",
+              "RelativeDocumentMoniker": "LifePlanner\\LifePlanner\\LifePlanner.csproj",
+              "ToolTip": "C:\\Users\\perry\\source\\repos\\LifePlanner\\LifePlanner\\LifePlanner\\LifePlanner.csproj",
+              "RelativeToolTip": "LifePlanner\\LifePlanner\\LifePlanner.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-12T11:56:42.951Z",
               "EditorCaption": ""
             },
             {
@@ -76,20 +99,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "EditUser.razor",
+              "DocumentMoniker": "C:\\Users\\perry\\source\\repos\\LifePlanner\\LifePlanner\\LifePlanner\\Components\\Pages\\DbAdmin\\EditUser.razor",
+              "RelativeDocumentMoniker": "LifePlanner\\LifePlanner\\Components\\Pages\\DbAdmin\\EditUser.razor",
+              "ToolTip": "C:\\Users\\perry\\source\\repos\\LifePlanner\\LifePlanner\\LifePlanner\\Components\\Pages\\DbAdmin\\EditUser.razor",
+              "RelativeToolTip": "LifePlanner\\LifePlanner\\Components\\Pages\\DbAdmin\\EditUser.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-12T10:49:28.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ViewUsers.razor",
+              "DocumentMoniker": "C:\\Users\\perry\\source\\repos\\LifePlanner\\LifePlanner\\LifePlanner\\Components\\Pages\\DbAdmin\\ViewUsers.razor",
+              "RelativeDocumentMoniker": "LifePlanner\\LifePlanner\\Components\\Pages\\DbAdmin\\ViewUsers.razor",
+              "ToolTip": "C:\\Users\\perry\\source\\repos\\LifePlanner\\LifePlanner\\LifePlanner\\Components\\Pages\\DbAdmin\\ViewUsers.razor",
+              "RelativeToolTip": "LifePlanner\\LifePlanner\\Components\\Pages\\DbAdmin\\ViewUsers.razor",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-12T10:44:14.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\Users\\perry\\source\\repos\\LifePlanner\\LifePlanner\\LifePlanner\\Services\\UserService.cs",
               "RelativeDocumentMoniker": "LifePlanner\\LifePlanner\\Services\\UserService.cs",
               "ToolTip": "C:\\Users\\perry\\source\\repos\\LifePlanner\\LifePlanner\\LifePlanner\\Services\\UserService.cs",
               "RelativeToolTip": "LifePlanner\\LifePlanner\\Services\\UserService.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwDcAAABFAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwCkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-06T16:25:35.928Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "ManageFinanceItem.razor",
               "DocumentMoniker": "C:\\Users\\perry\\source\\repos\\LifePlanner\\LifePlanner\\LifePlanner\\Components\\Pages\\FinanceManagment\\ManageFinanceItem.razor",
               "RelativeDocumentMoniker": "LifePlanner\\LifePlanner\\Components\\Pages\\FinanceManagment\\ManageFinanceItem.razor",
@@ -97,38 +146,37 @@
               "RelativeToolTip": "LifePlanner\\LifePlanner\\Components\\Pages\\FinanceManagment\\ManageFinanceItem.razor",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-07T19:01:09.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-07T19:01:09.748Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "FinanceItems.razor",
               "DocumentMoniker": "C:\\Users\\perry\\source\\repos\\LifePlanner\\LifePlanner\\LifePlanner\\Components\\Pages\\FinanceManagment\\FinanceItems.razor",
               "RelativeDocumentMoniker": "LifePlanner\\LifePlanner\\Components\\Pages\\FinanceManagment\\FinanceItems.razor",
               "ToolTip": "C:\\Users\\perry\\source\\repos\\LifePlanner\\LifePlanner\\LifePlanner\\Components\\Pages\\FinanceManagment\\FinanceItems.razor",
               "RelativeToolTip": "LifePlanner\\LifePlanner\\Components\\Pages\\FinanceManagment\\FinanceItems.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwJUAAAAAAAAA",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAqwJUAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-07T19:00:57.467Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "FinanceOverview.razor",
               "DocumentMoniker": "C:\\Users\\perry\\source\\repos\\LifePlanner\\LifePlanner\\LifePlanner\\Components\\Pages\\FinanceManagment\\FinanceOverview.razor",
               "RelativeDocumentMoniker": "LifePlanner\\LifePlanner\\Components\\Pages\\FinanceManagment\\FinanceOverview.razor",
-              "ToolTip": "C:\\Users\\perry\\source\\repos\\LifePlanner\\LifePlanner\\LifePlanner\\Components\\Pages\\FinanceManagment\\FinanceOverview.razor*",
-              "RelativeToolTip": "LifePlanner\\LifePlanner\\Components\\Pages\\FinanceManagment\\FinanceOverview.razor*",
-              "ViewState": "AQIAAGEAAAAAAAAAAAAuwHkAAAAiAAAA",
+              "ToolTip": "C:\\Users\\perry\\source\\repos\\LifePlanner\\LifePlanner\\LifePlanner\\Components\\Pages\\FinanceManagment\\FinanceOverview.razor",
+              "RelativeToolTip": "LifePlanner\\LifePlanner\\Components\\Pages\\FinanceManagment\\FinanceOverview.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHkAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-07T01:25:02.198Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "FinanceService.cs",
               "DocumentMoniker": "C:\\Users\\perry\\source\\repos\\LifePlanner\\LifePlanner\\LifePlanner\\Services\\FinanceService.cs",
               "RelativeDocumentMoniker": "LifePlanner\\LifePlanner\\Services\\FinanceService.cs",
@@ -136,12 +184,11 @@
               "RelativeToolTip": "LifePlanner\\LifePlanner\\Services\\FinanceService.cs",
               "ViewState": "AQIAAGIAAAAAAAAAAAAswE4AAABZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T01:01:41.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-07T01:01:41.892Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "FinanceData.cs",
               "DocumentMoniker": "C:\\Users\\perry\\source\\repos\\LifePlanner\\LifePlanner\\LifePlanner\\Data\\Models\\FinanceData.cs",
               "RelativeDocumentMoniker": "LifePlanner\\LifePlanner\\Data\\Models\\FinanceData.cs",
@@ -149,12 +196,11 @@
               "RelativeToolTip": "LifePlanner\\LifePlanner\\Data\\Models\\FinanceData.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T00:03:43.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-07T00:03:43.707Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "CreateUser.razor",
               "DocumentMoniker": "C:\\Users\\perry\\source\\repos\\LifePlanner\\LifePlanner\\LifePlanner\\Components\\Pages\\Account\\CreateUser.razor",
               "RelativeDocumentMoniker": "LifePlanner\\LifePlanner\\Components\\Pages\\Account\\CreateUser.razor",
@@ -166,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\perry\\source\\repos\\LifePlanner\\LifePlanner\\LifePlanner\\Program.cs",
               "RelativeDocumentMoniker": "LifePlanner\\LifePlanner\\Program.cs",

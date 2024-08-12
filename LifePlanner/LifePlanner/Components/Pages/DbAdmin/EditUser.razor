@@ -1,0 +1,62 @@
+﻿@page "/EditUser/{UserId:int}"
+
+@inject UserService userService;
+@inject NavigationManager navigationManager;
+@attribute [Authorize(Roles = "Administrator")]
+@rendermode InteractiveServer
+@using LifePlanner.Services
+@using LifePlanner.Data.Models
+@using Microsoft.AspNetCore.Authorization
+
+<h3>Edit User</h3>
+
+<EditForm Model="@user" OnValidSubmit="HandleValidSubmit">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label for="firstName">First Name</label>
+        <InputText id="firstName" class="form-control" @bind-Value="user.FirstName" />
+    </div>
+    <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <InputText id="lastName" class="form-control" @bind-Value="user.LastName" />
+    </div>
+    <div class="form-group">
+        <label for="userName">Username</label>
+        <InputText id="userName" class="form-control" @bind-Value="user.UserName" />
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <InputText id="email" class="form-control" @bind-Value="user.Email" />
+    </div>
+    <div class="form-group">
+        <label for="password">New Password</label>
+        <InputText id="password" type="password" class="form-control" @bind-Value="newPassword" />
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</EditForm>
+
+@code {
+    [Parameter]
+    public int UserId { get; set; }
+
+    private User user = new User();
+    private string newPassword = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        user = await userService.GetUserByIdAsync(UserId);
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        if (!string.IsNullOrEmpty(newPassword))
+        {
+            user.Password = userService.HashPassword(newPassword);
+        }
+
+        await userService.UpdateUserAsync(user);
+        navigationManager.NavigateTo("/ViewUsers");
+    }
+}

@@ -20,6 +20,7 @@
                     <h4 @onclick="() => ToggleExpand(type.ToString())" style="cursor: pointer;">
                         @type @(IsGroupExpanded(type.ToString()) ? "▼" : "►")
                     </h4>
+                    <button class="btn btn-primary" @onclick="() => OnClick(type.ToString())">Add New @type</button>
                     @if (IsGroupExpanded(type.ToString()))
                     {
                         @if (financeService.GetFinanceDataType(type.ToString()) == null || !financeService.GetFinanceDataType(type.ToString()).Any())
